@@ -81,7 +81,7 @@ export const createUsedDocumentFromAuth = async (
   if (!userAuth) return;
 
   const userDocRef = doc(db, "users", userAuth.uid);
-  console.log(userDocRef);
+ 
 
   const userSnapshot = await getDoc(userDocRef);
 
